@@ -5,8 +5,15 @@
 *.tfstate
 *.tfstate.*
 
+# .tfplan files
+*tfplan
+
 # Crash log files
 crash.log
+
+# Ignore the file used to store access keys
+**/config/secrets*.json
+!**/config/secrets.sample.json
 
 # Ignore any .tfvars files that are generated automatically for each Terraform run. Most
 # .tfvars files are managed as part of configuration and so should be included in
